@@ -1,9 +1,8 @@
-name: Build And Test
+name: BuildAndTest
 on:
   push:
     branches:
       - "*"
-      - '!master'
       - '!main'
 jobs:
   build:
@@ -27,4 +26,4 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
+        run: npm run test
