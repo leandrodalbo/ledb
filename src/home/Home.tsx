@@ -16,7 +16,7 @@ const Home = ({ assets }: HomeProps) => {
       </header >
       <article data-testid="cards" className="flex justify-center items-center flex-wrap gap-8 py-12">
         {assets.cardItems.map((item) => (
-          <HomeItem key={item.title} icon={item.icon} text={item.text} title={item.title} />
+          <HomeItem key={item.id} icon={item.icon} text={item.text} title={item.title} />
         ))}
       </article>
     </section >
