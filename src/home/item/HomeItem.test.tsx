@@ -6,7 +6,7 @@ import HomeItem from './HomeItem'
 describe("HomeItem Component", () => {
     it("should render a home card item", () => {
         render(<HomeItem icon="icon" text="card-text" title="card-tile" />);
-
+        expect(screen.getByText("card-tile")).toBeInTheDocument();
         expect(screen.getByText("card-text")).toBeInTheDocument();
     });
 

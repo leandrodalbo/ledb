@@ -36,7 +36,7 @@ export const homedata: HomeAssets = {
         },
         {
             "title": "Automated Deployments",
-            text: "Use strong automation to make frequent and reliable updates.",
+            text: "Using strong automation to make frequent and reliable updates.",
             icon: dev0
         }
     ]
