@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { homedata } from "../assets/homedata"
+
 
 import PackageComponent from './PackageComponent'
 import { packages, packagesHeader } from '../assets/packages'

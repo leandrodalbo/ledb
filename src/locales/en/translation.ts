@@ -31,7 +31,7 @@ const en = {
     pkg1Content: 'Design, automate, and manage cloud infrastructure with Terraform and AWS for scalable, cost-effective solutions',
 
     pkg2Title: 'Full-Stack Web Development',
-    pkg2Content: 'Create responsive web apps with React, TypeScript, and Spring Boot—perfect for interactive frontends and robust backends',
+    pkg2Content: 'Create responsive web apps with React, TypeScript, and Spring Boot. Interactive frontends and robust backends',
 };
 
 export default en;
