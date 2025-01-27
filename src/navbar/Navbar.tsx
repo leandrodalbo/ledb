@@ -7,7 +7,7 @@ interface NavbarProps {
 }
 
 const Navbar = ({ items }: NavbarProps) => {
-    const [lang, setLang] = useState("en")
+    const [lang, setLang] = useState("es")
 
     const { t, i18n } = useTranslation();
 
