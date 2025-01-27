@@ -7,43 +7,43 @@ import dev3 from './svg/dev3.svg';
 import dev4 from './svg/dev4.svg';
 
 export const homedata: HomeAssets = {
-    h1Header: "Welcome to Jungle-Logic",
-    ptext: "Simple, Robust and Clean Solutions",
+    h1HeaderKey: "homeh1",
+    ptextKey: "homeptext",
     cardItems: [
         {
             id: 0,
-            "title": "Agile Development",
-            "text": "Rapid iterations with continuous feedback to refine the product.",
+            titleKey: "homecardItem0Tile",
+            textKey: "homecardItem0Text",
             "icon": dev0
         },
         {
             id: 1,
-            "title": "Automated Testing",
-            "text": "Rigorous testing to catch issues early and enhance reliability.",
+            titleKey: "homecardItem1Tile",
+            textKey: "homecardItem1Text",
             "icon": dev1
         },
         {
             id: 2,
-            "title": "Innovation in Problem Solving",
-            "text": "Keeping things simple by clearly defining what the system should do and how it should perform.",
+            titleKey: "homecardItem2Tile",
+            textKey: "homecardItem2Text",
             "icon": dev2
         },
         {
             id: 3,
-            "title": "Cloud-Native Approach",
-            "text": "Systems that are easily recoverable from issues and simple to monitor.",
+            titleKey: "homecardItem3Tile",
+            textKey: "homecardItem3Text",
             "icon": dev3
         },
         {
             id: 4,
-            "title": "Clean Code and Best Practices",
-            "text": "Solutions that are maintainable and efficient.",
+            titleKey: "homecardItem4Tile",
+            textKey: "homecardItem4Text",
             "icon": dev4
         },
         {
             id: 5,
-            "title": "Automated Deployments",
-            text: "Using strong automation to make frequent and reliable updates.",
+            titleKey: "homecardItem5Tile",
+            textKey: "homecardItem5Text",
             icon: dev0
         }
     ]

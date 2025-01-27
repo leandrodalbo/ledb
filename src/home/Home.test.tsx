@@ -7,8 +7,8 @@ import Home from './Home'
 describe("Home Component", () => {
     it("should render the Home component", () => {
         render(<Home assets={homedata} />);
-        expect(screen.getByText(homedata.h1Header)).toBeInTheDocument();
-        expect(screen.getByText(homedata.ptext)).toBeInTheDocument();
+        expect(screen.getByText(homedata.h1HeaderKey)).toBeInTheDocument();
+        expect(screen.getByText(homedata.ptextKey)).toBeInTheDocument();
         expect(screen.getByTestId("cards")).toBeInTheDocument();
     });
 

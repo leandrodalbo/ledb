@@ -11,12 +11,15 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@types/react-icons": "^2.2.7",
+    "i18next": "^24.2.2",
+    "i18next-browser-languagedetector": "^8.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-i18next": "^15.4.0",
     "react-icons": "^5.4.0"
   },
   "devDependencies": {
+    "@types/react-icons": "^2.2.7",
     "@eslint/js": "^9.17.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
