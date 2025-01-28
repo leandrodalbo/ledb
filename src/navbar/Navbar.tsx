@@ -7,15 +7,14 @@ interface NavbarProps {
 }
 
 const Navbar = ({ items }: NavbarProps) => {
-    const [lang, setLang] = useState("en")
 
     const { t, i18n } = useTranslation();
 
     const changeLanguage = () => {
-        (lang === "en") ? setLang("es") :
-            setLang("en");
-        i18n.changeLanguage(lang);
+        i18n.changeLanguage((i18n.language === "en") ? "es" : "en");
     };
+
+    const flag = (i18n.language === "en" ? items.en : items.es);
 
     return (
         <nav className="fixed top-0 left-0 w-full shadow-lg z-10 bg-darkBg text-jungleGreen py-4 px-6 flex justify-between items-center">
@@ -25,7 +24,7 @@ const Navbar = ({ items }: NavbarProps) => {
                 <li className="hover:text-junglePink"><a href="#home">{t(items.homeKey)}</a></li>
                 <li className="hover:text-junglePink"><a href="#packages">{t(items.packagesKey)}</a></li>
                 <li className="hover:text-junglePink"><a href="#contact">{t(items.contactKey)}</a></li>
-                <li><img src={(lang !== "en" ? items.en : items.es)} alt={lang} className="w-5 h-5" onClick={() => changeLanguage()} /></li>
+                <li><img src={flag} alt={i18n.language} className="w-5 h-5" onClick={() => changeLanguage()} /></li>
             </ul>
 
         </nav>
