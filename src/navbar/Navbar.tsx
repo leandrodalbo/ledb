@@ -7,7 +7,7 @@ interface NavbarProps {
 }
 
 const Navbar = ({ items }: NavbarProps) => {
-    const [lang, setLang] = useState("es")
+    const [lang, setLang] = useState("en")
 
     const { t, i18n } = useTranslation();
 
@@ -25,7 +25,7 @@ const Navbar = ({ items }: NavbarProps) => {
                 <li className="hover:text-junglePink"><a href="#home">{t(items.homeKey)}</a></li>
                 <li className="hover:text-junglePink"><a href="#packages">{t(items.packagesKey)}</a></li>
                 <li className="hover:text-junglePink"><a href="#contact">{t(items.contactKey)}</a></li>
-                <li><img src={(lang === "en" ? items.en : items.es)} alt={lang} className="w-5 h-5" onClick={() => changeLanguage()} /></li>
+                <li><img src={(lang !== "en" ? items.en : items.es)} alt={lang} className="w-5 h-5" onClick={() => changeLanguage()} /></li>
             </ul>
 
         </nav>
