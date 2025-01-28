@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { NavigationItems } from "../types";
 import { useTranslation } from 'react-i18next';
 
