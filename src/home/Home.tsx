@@ -10,19 +10,19 @@ const Home = ({ assets }: HomeProps) => {
   return (
     <section
       id="home"
-      className="bg-darkBg text-lightText min-h-screen pt-24 text-center py-12 "
+      className="bg-darkBg text-lightText  text-center min-h-screen pt-24 py-12 mt-12"
     >
-      <header className="text-center py-12">
+      <header className="text-center mt-12">
         <h1 className="text-4xl font-bold text-jungleGreen">
           {t(assets.h1HeaderKey)}
           <span className="inline-block animate-waving-hand ml-2">👋</span>
         </h1>
-        <p className="text-lg text-junglePink mt-4">{t(assets.ptextKey)}</p>
+        <p className="text-md text-junglePink mt-2 ">{t(assets.ptextKey)}</p>
       </header>
 
       <p
         data-testid="large-text"
-        className="text-lg text-gray-300 mx-auto text-center px-6 sm:px-12 md:px-20 lg:px-32 xl:px-40 max-w-3xl leading-relaxed"
+        className="text-lg text-gray-300 mx-auto text-center mt-12 px-6 sm:px-12 md:px-20 lg:px-32 xl:px-40 max-w-3xl leading-relaxed"
       >
         {t(assets.beforeName)}
         <span data-testid="name" className="font-semibold text-jungleGreen">
@@ -31,7 +31,7 @@ const Home = ({ assets }: HomeProps) => {
         {t(assets.ptextKey2)}
       </p>
 
-      <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-2">
         <a
           href="https://xpdriven.blog"
           target="_blank"

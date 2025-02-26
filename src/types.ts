@@ -6,7 +6,7 @@ export interface HomeAssets {
   ptextKey2: string;
   beforeName: string;
   btnContact: string;
-  name: String;
+  myName: String;
 }
 
 export interface HomeCardItem {
@@ -34,7 +34,7 @@ export interface Contact {
 export interface NavigationItems {
   brand: string;
   homeKey: string;
-  packagesKey: string;
+  servicesKey: string;
   contactKey: string;
   es: string;
   en: string;

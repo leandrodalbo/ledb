@@ -1,6 +1,6 @@
 const en = {
   navhome: "Home",
-  navPackages: "Services",
+  navServices: "Services",
   navContact: "Contact",
   homeh1: "Welcome to my Website!",
   homeptext: "Simple, Robust and Clean Solutions",

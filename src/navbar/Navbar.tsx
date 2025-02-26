@@ -25,7 +25,7 @@ const Navbar = ({ items }: NavbarProps) => {
           <a href="#home">{t(items.homeKey)}</a>
         </li>
         <li className="hover:text-junglePink">
-          <a href="#packages">{t(items.packagesKey)}</a>
+          <a href="#services">{t(items.servicesKey)}</a>
         </li>
         <li className="hover:text-junglePink">
           <a href="#contact">{t(items.contactKey)}</a>
