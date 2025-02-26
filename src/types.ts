@@ -5,6 +5,7 @@ export interface HomeAssets {
   ptextKey: string;
   ptextKey2: string;
   beforeName: string;
+  btnContact: string;
   name: String;
 }
 

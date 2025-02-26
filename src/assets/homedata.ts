@@ -5,5 +5,6 @@ export const homedata: HomeAssets = {
   ptextKey: "homeptext",
   ptextKey2: "homeptext2",
   beforeName: "bfName",
-  name: "Leandro",
+  btnContact: "navContact",
+  myName: "Leandro",
 };

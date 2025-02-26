@@ -26,10 +26,27 @@ const Home = ({ assets }: HomeProps) => {
       >
         {t(assets.beforeName)}
         <span data-testid="name" className="font-semibold text-jungleGreen">
-          {assets.name}
+          {assets.myName}
         </span>
         {t(assets.ptextKey2)}
       </p>
+
+      <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="https://xpdriven.blog"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-jungleGreen text-white font-medium py-2 px-2 rounded-lg transition-all duration-300 transform hover:scale-105 hover:bg-opacity-90 shadow-md"
+        >
+          {t("xpdriven.blog")}
+        </a>
+        <a
+          href="#contact"
+          className="bg-junglePink text-white font-medium py-2 px-2 rounded-lg transition-all duration-300 transform hover:scale-105 hover:bg-opacity-90 shadow-md"
+        >
+          {t(assets.btnContact)}
+        </a>
+      </div>
     </section>
   );
 };

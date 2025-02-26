@@ -11,5 +11,7 @@ describe("Home Component", () => {
     expect(screen.getByText(homedata.ptextKey)).toBeInTheDocument();
     expect(screen.getByTestId("name")).toBeInTheDocument();
     expect(screen.getByTestId("large-text")).toBeInTheDocument();
+    expect(screen.getByText(homedata.btnContact)).toBeInTheDocument();
+    expect(screen.getByText("xpdriven.blog")).toBeInTheDocument();
   });
 });
