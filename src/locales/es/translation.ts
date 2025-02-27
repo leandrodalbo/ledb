@@ -10,25 +10,27 @@ const es = {
   homeptext2:
     ", desarrollo aplicaciones nativas en la nube. Ya sea desarrollo de backend, UI o automatización de CI/CD, las soluciones siempre seran escalables y eficientes.",
 
-  s0Title: "Agile Development",
-  s0Content: "Rapid iterations with continuous feedback to refine the product",
+  s0Title: "Metodos Agiles",
+  s0Content:
+    "Iteraciones rapidas con feedback constante permitiendo adaptar los requerimientos",
 
-  s1Title: "Automated Testing",
-  s1Content: "Rigorous testing to catch issues early and enhance reliability",
+  s1Title: "Testing Automatizado",
+  s1Content:
+    "Testeo en distinas capas de las aplicacions para evitar bugs entregar un producto confiable",
 
-  s2Title: "Cloud-Native Approach",
+  s2Title: "Nativos en la Nube",
   s2Content:
-    "Systems that are easily recoverable from issues and simple to monitor",
+    "Sistemas simples de monitorear y que se recuran automaticamente ante distintas fallas",
 
-  s3Title: "Clean Code & Best Practices",
-  s3Content: "Solutions that are maintainable and efficient",
+  s3Title: "Codigo Limpio y Robusto",
+  s3Content: "Soluciones robustas y faciles de mantener",
 
-  s4Title: "Automated Deployments",
-  s4Content: "Using strong automation to make frequent and reliable updates",
+  s4Title: "Automatizacion del delivery",
+  s4Content: "Delivery automatizado permitiendo entregas constantes",
 
-  s5Title: "Full-Stack Web Development",
+  s5Title: "Desarrollo full-stack",
   s5Content:
-    "Create responsive web apps with React, TypeScript, and Spring Boot.",
+    "Desarrollos de front-ends con React y Typescript y back-ends con Spring-boot",
 };
 
 export default es;

@@ -10,23 +10,26 @@ const ServicesComponent = ({ services, hText }: PackageProps) => {
   const { t } = useTranslation();
 
   return (
-    <section id="services" className="pb-4 py-16 bg-darkBg">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        {/* Section Title */}
+    <section
+      id="services"
+      className="pb-4 py-16 bg-darkBg flex items-center justify-center min-h-screen"
+    >
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-junglePink mb-12">
           {t(hText)}
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
           {services.map((service, index) => {
             const Icon = service.icon;
 
             return (
               <div
                 key={index}
-                className="p-8 bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition duration-300"
+                className="w-full h-32 min-h-[180px] flex flex-col justify-between 
+                       p-8 bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition duration-300"
               >
-                <div className="flex items-center space-x-4 mb-4">
+                <div className="flex items-center space-x-4">
                   {Icon && <Icon className="text-jungleGreen text-3xl" />}
                   <h3 className="text-lg font-bold text-jungleGreen">
                     {t(service.titleKey)}
