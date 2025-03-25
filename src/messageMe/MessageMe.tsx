@@ -1,13 +1,14 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import { useTranslation } from "react-i18next";
-import axios from "axios";
-import { MessageAssets } from "../types";
+
+import { MessageAssets, MessageData } from "../types";
 
 interface MessageMeProps {
   assets: MessageAssets;
+  sendMessageService: (messageData: MessageData) => Promise<boolean>;
 }
 
-const MessageMe = ({ assets }: MessageMeProps) => {
+const MessageMe = ({ assets, sendMessageService }: MessageMeProps) => {
   const { t } = useTranslation();
   const [messageData, setFormData] = useState({
     name: "",
@@ -29,31 +30,15 @@ const MessageMe = ({ assets }: MessageMeProps) => {
     setLoading(true);
     setResult("");
 
-    const serviceId = "your_service_id";
-    const templateId = "your_template_id";
-    const publicKey = "your_public_key";
+    const msgSuccess = await sendMessageService(messageData);
 
-    const emailData = {
-      service_id: serviceId,
-      template_id: templateId,
-      user_id: publicKey,
-      template_params: {
-        user_name: messageData.name,
-        user_email: messageData.email,
-        message: messageData.message,
-      },
-    };
-
-    try {
-      await axios.post(
-        "https://api.emailjs.com/api/v1.0/email/send",
-        emailData
-      );
+    if (msgSuccess) {
       setResult(t(assets.messageSuccess));
       setFormData({ name: "", email: "", message: "" });
-    } catch (error) {
+    } else {
       setResult(t(assets.messageFailed));
     }
+
     setLoading(false);
   };
   return (
