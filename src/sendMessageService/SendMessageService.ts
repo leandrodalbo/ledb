@@ -12,8 +12,9 @@ const sendMessage = async (messageData: MessageData): Promise<boolean> => {
     template_id: templateId,
     user_id: publicKey,
     template_params: {
-      user_name: messageData.name,
-      user_email: messageData.email,
+      subject: "MESSAGE_FROM_WEBSITE",
+      name: messageData.name,
+      email: messageData.email,
       message: messageData.message,
     },
   };
