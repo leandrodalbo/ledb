@@ -12,6 +12,11 @@ jobs:
       DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
       SSHKEY: ${{ secrets.SSHKEY }}
       SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+      VITE_EMAIL_API_URL: ${{ secrets.VITE_EMAIL_API_URL }}
+      VITE_EMAIL_SERVICE_ID: ${{ secrets.VITE_EMAIL_SERVICE_ID }}
+      VITE_EMAIL_TEMPLATE_ID: ${{ secrets.VITE_EMAIL_TEMPLATE_ID }}
+      VITE_EMAIL_PUBLIC_KEY: ${{ secrets.VITE_EMAIL_PUBLIC_KEY }}
+
     strategy:
       matrix:
         node-version: [23.x]
