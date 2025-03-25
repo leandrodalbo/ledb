@@ -29,6 +29,14 @@ const en = {
   s5Title: "Full-Stack Web Development",
   s5Content:
     "Create responsive web apps with React, TypeScript, and Spring Boot.",
+
+  msgSuccess: "Your message has been sent successfully!",
+  messageFailed: "Failed to send message. Please try again later.",
+  msgNamePlh: "Your Name",
+  msgEmailPlh: "Your Email",
+  msgMsgPlh: "Your Message",
+  btnMsgLoading: "Sending...",
+  btnSendMsg: "Send Message",
 };
 
 export default en;
