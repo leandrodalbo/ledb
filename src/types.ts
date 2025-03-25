@@ -16,13 +16,11 @@ export interface HomeCardItem {
   titleKey: string;
 }
 
-export interface Package {
+export interface Service {
   id: number;
   titleKey: string;
   contentKey: string;
-  icon: string;
-  bgColor: string;
-  textColor: string;
+  icon: IconType;
 }
 
 export interface Contact {

@@ -1,12 +1,12 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { items } from "../assets/navigation";
+import { navItems } from "../assets/navigation";
 
 import NavBar from "./Navbar";
 
 describe("NavBar Component", () => {
   it("should render the NavBar", () => {
-    render(<NavBar items={items} />);
+    render(<NavBar items={navItems} />);
 
     expect(screen.getByText("LEDB")).toBeInTheDocument();
     expect(screen.getByText("navhome")).toBeInTheDocument();
