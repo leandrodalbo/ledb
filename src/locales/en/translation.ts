@@ -31,7 +31,7 @@ const en = {
     "Create responsive web apps with React, TypeScript, and Spring Boot.",
 
   msgSuccess: "Your message has been sent successfully!",
-  messageFailed: "Failed to send message. Please try again later.",
+  msgFailed: "Failed to send message. Please try again later.",
   msgNamePlh: "Your Name",
   msgEmailPlh: "Your Email",
   msgMsgPlh: "Your Message",

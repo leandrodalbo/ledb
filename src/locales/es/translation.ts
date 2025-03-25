@@ -33,7 +33,7 @@ const es = {
     "Desarrollos de front-ends con React y Typescript y back-ends con Spring-boot",
 
   msgSuccess: "¡Tu mensaje ha sido enviado con éxito!",
-  messageFailed:
+  msgFailed:
     "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo más tarde.",
 
   msgNamePlh: "Su Nombre",

@@ -42,7 +42,10 @@ const MessageMe = ({ assets, sendMessageService }: MessageMeProps) => {
     setLoading(false);
   };
   return (
-    <div className="max-w-lg mx-auto p-6 bg-darkBg shadow-lg rounded-xl text-darkerText">
+    <div
+      id="contact"
+      className="max-w-lg mx-auto p-6 bg-darkBg shadow-lg rounded-xl text-darkerText mb-4"
+    >
       <h2 className="text-2xl font-semibold text-center mb-4 text-jungleGreen">
         {t(assets.h2HeaderKey)}
       </h2>

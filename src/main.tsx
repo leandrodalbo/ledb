@@ -16,12 +16,14 @@ import sendMessage from "./sendMessageService/SendMessageService";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Navbar items={navItems} />
     <main className="bg-darkBg">
+      <Navbar items={navItems} />
+
       <Home assets={homedata} />
       <ServicesComponent services={services} hText={navItems.servicesKey} />
       <MessageMe assets={messageAssets} sendMessageService={sendMessage} />
+
+      <ContactComponent contacts={contacs} />
     </main>
-    <ContactComponent contacts={contacs} />
   </StrictMode>
 );

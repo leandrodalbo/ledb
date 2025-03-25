@@ -1,11 +1,10 @@
 import axios from "axios";
 import { MessageData } from "../types";
 
-const apiUrl =
-  process.env.EMAIL_API_URL || "https://api.emailjs.com/api/v1.0/email/send";
-const serviceId = process.env.EMAIL_SERVICE_ID;
-const templateId = process.env.EMAIL_TEMPLATE_ID;
-const publicKey = process.env.EMAIL_PUBLIC_KEY;
+const apiUrl = import.meta.env.VITE_EMAIL_API_URL;
+const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
+const templateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
 
 const sendMessage = async (messageData: MessageData): Promise<boolean> => {
   const emailData = {
