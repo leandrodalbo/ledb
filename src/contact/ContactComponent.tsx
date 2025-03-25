@@ -6,7 +6,7 @@ interface ContactProps {
 
 const ContactComponent = ({ contacts }: ContactProps) => {
   return (
-    <footer id="contact" className="bg-darkBg text-lightText py-6">
+    <footer className="bg-darkBg text-lightText py-6 mt-16">
       <div className="container mx-auto flex flex-col items-center">
         <div className="flex space-x-10 mb-6">
           {contacts.map((it) => (

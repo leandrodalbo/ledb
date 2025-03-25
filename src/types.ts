@@ -9,6 +9,17 @@ export interface HomeAssets {
   myName: String;
 }
 
+export interface MessageAssets {
+  h2HeaderKey: string;
+  messageSuccess: string;
+  messageFailed: string;
+  namePlh: string;
+  emailPlh: string;
+  msgPlh: string;
+  msgBtnOnLoading: string;
+  msgBtnSend: string;
+}
+
 export interface HomeCardItem {
   id: number;
   icon: string;
@@ -36,4 +47,10 @@ export interface NavigationItems {
   contactKey: string;
   es: string;
   en: string;
+}
+
+export interface MessageData {
+  name: string;
+  email: string;
+  message: string;
 }

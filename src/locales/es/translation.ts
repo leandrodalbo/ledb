@@ -31,6 +31,16 @@ const es = {
   s5Title: "Desarrollo full-stack",
   s5Content:
     "Desarrollos de front-ends con React y Typescript y back-ends con Spring-boot",
+
+  msgSuccess: "¡Tu mensaje ha sido enviado con éxito!",
+  msgFailed:
+    "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo más tarde.",
+
+  msgNamePlh: "Su Nombre",
+  msgEmailPlh: "Su Email",
+  msgMsgPlh: "Su Mensaje",
+  btnMsgLoading: "Enviando Mensaje...",
+  btnSendMsg: "Enviar Mensaje",
 };
 
 export default es;
