@@ -16,11 +16,11 @@ const es = {
 
   s1Title: "Testing Automatizado",
   s1Content:
-    "Testeo en distinas capas de las aplicacions para evitar bugs entregar un producto confiable",
+    "Testeo en distintas capas de las aplicaciones para evitar bugs entregar un producto confiable",
 
   s2Title: "Nativos en la Nube",
   s2Content:
-    "Sistemas simples de monitorear y que se recuran automaticamente ante distintas fallas",
+    "Sistemas simples de monitorear y que se recuperan automaticamente ante distintas fallas",
 
   s3Title: "Codigo Limpio y Robusto",
   s3Content: "Soluciones robustas y faciles de mantener",
@@ -30,7 +30,7 @@ const es = {
 
   s5Title: "Desarrollo full-stack",
   s5Content:
-    "Desarrollos de front-ends con React y Typescript y back-ends con Spring-boot",
+    "Desarrollos de front-end con React y Typescript, backend con Spring-boot",
 
   msgSuccess: "¡Tu mensaje ha sido enviado con éxito!",
   msgFailed:
